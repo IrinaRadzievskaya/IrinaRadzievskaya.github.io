@@ -5,6 +5,9 @@
 	<title>Shop</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="selectize.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -56,490 +59,551 @@
 		</div>
 	</header>
 	<main class="main">
-    <div class="slider">
-      <div class="container">Slider</div>
+    <div class="container">
+      <div class="slider-block">
+        <div> <img src="images/slider2.jpg"></div>
+        <div><img src="images/slider1.jpg"></div>
+        <div><img src="images/slider3.jpg"></div>
+      </div>
     </div>
     <div class="container">
-      <div class="col-md-3">
-        <div class="filter-panel">
-          <div class="filter-panel__category-list">
-            <div class="filter-panel__category">
-              <div class="category__title">Device type</div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__laptop">
-                <label for="filter-panel__laptop">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">Laptop</span>
-                </label>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="filter-panel">
+            <div class="filter-panel__category-list">
+              <div class="filter-panel__category">
+                <div class="category__title">Device type</div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__laptop">
+                  <label for="filter-panel__laptop">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">Laptop</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__tablet">
+                  <label for="filter-panel__tablet">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">Tablet</span>
+                  </label>
+                </div>
               </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__tablet">
-                <label for="filter-panel__tablet">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">Tablet</span>
-                </label>
+              <div class="filter-panel__category">
+                <div class="category__title">Color</div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__black">
+                  <label for="filter-panel__black">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">Black</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__red">
+                  <label for="filter-panel__red">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">Red</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__green">
+                  <label for="filter-panel__green">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">Green</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__blue">
+                  <label for="filter-panel__blue">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">Blue</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__orange">
+                  <label for="filter-panel__orange">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">Orange</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-panel__category">
+                <div class="category__title">Ram</div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__1gb">
+                  <label for="filter-panel__1gb">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">1GB</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__2gb">
+                  <label for="filter-panel__2gb">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">2GB</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__4gb">
+                  <label for="filter-panel__4gb">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">4GB</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__6gb">
+                  <label for="filter-panel__6gb">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">6GB</span>
+                  </label>
+                </div>
+                <div class="category__checkbox">
+                  <input type="checkbox" id="filter-panel__8gb">
+                  <label for="filter-panel__8gb">
+                    <span class="checkbox__checkbox"></span>
+                    <span class="checkbox__label">8GB</span>
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="filter-panel__category">
-              <div class="category__title">Color</div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__black">
-                <label for="filter-panel__black">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">Black</span>
-                </label>
-              </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__red">
-                <label for="filter-panel__red">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">Red</span>
-                </label>
-              </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__green">
-                <label for="filter-panel__green">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">Green</span>
-                </label>
-              </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__blue">
-                <label for="filter-panel__blue">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">Blue</span>
-                </label>
-              </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__orange">
-                <label for="filter-panel__orange">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">Orange</span>
-                </label>
-              </div>
-            </div>
-            <div class="filter-panel__category">
-              <div class="category__title">Ram</div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__1gb">
-                <label for="filter-panel__1gb">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">1GB</span>
-                </label>
-              </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__2gb">
-                <label for="filter-panel__2gb">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">2GB</span>
-                </label>
-              </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__4gb">
-                <label for="filter-panel__4gb">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">4GB</span>
-                </label>
-              </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__6gb">
-                <label for="filter-panel__6gb">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">6GB</span>
-                </label>
-              </div>
-              <div class="category__checkbox">
-                <input type="checkbox" id="filter-panel__8gb">
-                <label for="filter-panel__8gb">
-                  <span class="checkbox__checkbox"></span>
-                  <span class="checkbox__label">8GB</span>
-                </label>
-              </div>
+            <div class="filter-panel__more-options">Show more options...</div>
+            <button class="button">Submit</button>
+          </div>
+        </div>
+        <div class="catalog col-md-9">
+          <div class="row">
+            <ul class="breadcrumbs col-md-12">
+              <li class="breadcrumb"><a href="">Home page</a></li>
+              <li class="breadcrumb"><a href="">Products</a></li>
+              <li class="breadcrumb"><span>Laptops and Tablets</span></li>
+            </ul>
+          </div>
+          <div class="row">
+            <h1 class="title col-md-8">Laptops and Tablets</h1>
+            <div class="col-md-4">
+              <select class="catalog__sort">
+                <option value="price-increase">sort by price ↑</option>
+                <option value="price-decrease">sort by price ↓</option>
+              </select>
             </div>
           </div>
-          <div class="filter-panel__more-options">Show more options...</div>
-          <button class="button">Submit</button>
-        </div>
-      </div>
-      <div class="catalog col-md-9">
-        <div class="row">
-          <ul class="breadcrumbs col-md-12">
-            <li class="breadcrumb"><a href="">Home page</a></li>
-            <li class="breadcrumb"><a href="">Products</a></li>
-            <li class="breadcrumb"><span>Laptops and Tablets</span></li>
+          <div class="row">
+          <ul class="product-list">
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-9.png" alt="#1 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#1 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$599</span>
+                  <span class="price__hundredth">25</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-1.png" alt="#2 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#2 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$1250</span>
+                  <span class="price__hundredth">99</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-2.png" alt="#3 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#3 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$399</span>
+                  <span class="price__hundredth">50</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-8.png" alt="#1 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#1 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$599</span>
+                  <span class="price__hundredth">25</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-6.png" alt="#2 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#2 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$1250</span>
+                  <span class="price__hundredth">99</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-4.png" alt="#3 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#3 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$399</span>
+                  <span class="price__hundredth">50</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-7.png" alt="#1 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#1 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$599</span>
+                  <span class="price__hundredth">25</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-3.png" alt="#2 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#2 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$1250</span>
+                  <span class="price__hundredth">99</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="product col-md-4">
+              <div class="product__image">
+                <img src="images/products/icon-2.png" alt="#3 Device name">
+              </div>
+              <div class="product__controls">
+                <div class="product__control product__control_fullsize"></div>
+                <div class="product__control product__control_like"></div>
+              </div>
+              <div class="product__content">
+                <h3 class="product__name">#3 Device Name</h3>
+                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <ul class="product__characteristic">
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Type:</span>
+                    <span class="characteristic__value">Laptop</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Screen size:</span>
+                    <span class="characteristic__value">7 inches</span>
+                  </li>
+                  <li class="characteristic__item">
+                    <span class="characteristic__property">Ram:</span>
+                    <span class="characteristic__value">1GB</span>
+                  </li>
+                </ul>
+                <div class="product__price">
+                  <span class="price__integer">$399</span>
+                  <span class="price__hundredth">50</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="product__quantity">
+                    <button class="button button_decrement">-</button>
+                    <input type="number" value="1">
+                    <button class="button button_increment">+</button>
+                  </div>
+                  <button class="button">
+                    <span class="button__text">More details</span>
+                  </button>
+                  <button class="button product__add-to-cart add-to-cart">
+                    <span class="button__text">Add to cart</span>
+                    <span class="button__icon button__icon_cart"></span>
+                  </button>
+                </div>
+              </div>
+            </li>
           </ul>
-        </div>
-        <div class="row">
-          <h1 class="title col-md-8">Laptops and Tablets</h1>
-        </div>
-        <div class="row">
-        <ul class="product-list">
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-9.png" alt="#1 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#1 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$599</span>
-                <span class="price__hundredth">25</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-1.png" alt="#2 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#2 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$1250</span>
-                <span class="price__hundredth">99</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-2.png" alt="#3 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#3 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$399</span>
-                <span class="price__hundredth">50</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-8.png" alt="#1 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#1 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$599</span>
-                <span class="price__hundredth">25</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-6.png" alt="#2 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#2 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$1250</span>
-                <span class="price__hundredth">99</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-4.png" alt="#3 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#3 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$399</span>
-                <span class="price__hundredth">50</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-7.png" alt="#1 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#1 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$599</span>
-                <span class="price__hundredth">25</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-3.png" alt="#2 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#2 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$1250</span>
-                <span class="price__hundredth">99</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="product col-md-4">
-            <div class="product__image">
-              <img src="images/products/icon-2.png" alt="#3 Device name">
-            </div>
-            <div class="product__controls">
-              <div class="product__control product__control_fullsize"></div>
-              <div class="product__control product__control_like"></div>
-            </div>
-            <div class="product__content">
-              <h3 class="product__name">#3 Device Name</h3>
-              <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              <ul class="product__characteristic">
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Type:</span>
-                  <span class="characteristic__value">Laptop</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Screen size:</span>
-                  <span class="characteristic__value">7 inches</span>
-                </li>
-                <li class="characteristic__item">
-                  <span class="characteristic__property">Ram:</span>
-                  <span class="characteristic__value">1GB</span>
-                </li>
-              </ul>
-              <div class="product__price">
-                <span class="price__integer">$399</span>
-                <span class="price__hundredth">50</span>
-              </div>
-              <div class="product__buttons">
-                <button class="button">
-                  <span class="button__text">More details</span>
-                </button>
-                <button class="button product__add-to-cart add-to-cart">
-                  <span class="button__text">Add to cart</span>
-                  <span class="button__icon button__icon_cart"></span>
-                </button>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </div>
         </div>
       </div>
     </div>
   </main>
 	<!-- <footer class="footer">Footer</footer> -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="selectize.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
